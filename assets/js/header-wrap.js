@@ -32,3 +32,49 @@ function searchbar(){
 	});
 }
 searchbar();
+
+
+//Sol menunun uzunlugunun footere qeder uzanmasi
+function leftMenuWidth(){
+		a = $("#content-wrap").height();
+		$("#header-wrap .fixedMenuBar").height(a);
+		$("#header-wrap .fixedMenuBar").find('ul').height(a);
+}
+leftMenuWidth();
+
+
+
+
+// function sidebar(){
+// var deg=0;
+// var count = 0;
+// var nav_s = $('.navigator i');  
+// var window_s = $("html,body");
+// var collapse_s = $(".navigator .myCollapse");
+// var i;
+
+
+// 	nav_s.on('click', function(e) {
+// 	e.preventDefault()
+// 	if(count==0){
+// 		collapsing();
+// 	}
+// 	else{
+// 		nonecollapse();
+// 	}
+// });	
+// 	function nonecollapse() {
+// 		count=0;
+// 		nav_s.animate({left: '0'}, 500);
+// 		window_s.animate({marginLeft: '0'}, 500);
+// 		collapse_s.animate({right:'-270px'}, 500);
+// 	}
+// 	function collapsing() {
+// 		count=1;
+// 		nav_s.animate({left: '-245px'}, 500);
+// 		window_s.animate({marginLeft: '-270px'}, 500);
+// 		collapse_s.animate({right:'0'}, 500);
+// 	}
+// }
+
+// sidebar();

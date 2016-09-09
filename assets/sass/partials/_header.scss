@@ -1,5 +1,10 @@
+body{
+	background-color: #F4F4F4;
+}
+
 #header-wrap{
 	@include shadow(0px 0px 5px lightgray);
+	background-color: white;
 	//up line
 	.line{
 		border: 2px solid $mainColor;
@@ -8,6 +13,7 @@
 	.logo{
 		width: 120px;
 		height: 48px;
+		background-color: white;
 		float:left;
 	}
 	//browse
@@ -15,6 +21,7 @@
 		width: 111px;
 		height: 48px;
 		float:left;
+		background-color: white;
 		border-left: 1px solid darken(#F4F4F4, 15%);
 		border-right: 1px solid darken(#F4F4F4, 15%);
 		padding: 14px 25px;
@@ -44,9 +51,11 @@
 		ul{
 			width: 230px;
 			min-height: 450px;
+			background-color: white;
 			position: absolute;
 			top: 49px;
 			left: 0;
+			z-index: 11;
 			@include shadow(-1px 2px 6px lightgray);
 			display: none;
 			li{
@@ -68,7 +77,7 @@
 					position: absolute;
 					top: -1px;
 					left: 230px;
-					z-index: 1;
+					
 					@include shadow(1px 2px 6px lightgray);
 					li{
 						h4{
@@ -89,7 +98,6 @@
 		ul{
 			display: block;
 			left: -121px;
-			height: 1000px;
 			li{
 				ul{
 					display: none;
@@ -145,6 +153,7 @@
 	.myCourses{
 		width: 110px;
 		height: 48px;
+		background-color: white;
 		float: left;
 		border-left: 1px solid darken(#F4F4F4, 15%);
 		border-right: 1px solid darken(#F4F4F4, 15%);
@@ -167,10 +176,12 @@
 			display: none;
 			width: 245px;
 			min-height: 255px;
+			background-color: white;
 			@include shadow(0 5px 8px 0 lightgray);
 			position: absolute;
 			top: 49px;
 			left: -136px;
+			z-index: 11;
 			div{
 				padding: 10px 10px;
 				&:nth-child(1){
@@ -227,6 +238,7 @@
 	.shopping{
 		width: 60px;
 		height: 48px;
+		background-color: white;
 		float: left;
 		border-right: 1px solid darken(#F4F4F4, 15%);
 		position: relative;
@@ -250,10 +262,12 @@
 			display: none;
 			width: 375px;
 			min-height: 240px;
+			background-color: white;
 			@include shadow(0 5px 8px 0 lightgray);
 			position: absolute;
 			top: 49px;
 			left: -315px;
+			z-index: 11;
 			div{
 				div{
 					border-bottom: 1px solid darken(#F4F4F4, 10%);
@@ -317,6 +331,7 @@
 	.bell{
 		width: 60px;
 		height: 48px;
+		background-color: white;
 		float: left;
 		border-right: 1px solid darken(#F4F4F4, 15%);
 		position: relative;
@@ -340,10 +355,12 @@
 			display: none;
 			width: 375px;
 			min-height: 100px;
+			background-color: white;
 			@include shadow(0 5px 8px 0 lightgray);
 			position: absolute;
 			top: 49px;
 			left: -315px;
+			z-index: 11;
 			div{
 				div{
 					border-bottom: 1px solid darken(#F4F4F4, 10%);
@@ -352,14 +369,17 @@
 						font-size: 16px;
 						display: inline-block;
 					}
-					i{
-						float: right;
-						font-size: 21px;
-						cursor: pointer;
-						color: lighten($textColor, 35%);
-						@include transition(all 0.3s ease);
-						&:hover{
-							color: $textColor;
+					a{
+						i{
+							padding: 0;
+							float: right;
+							font-size: 21px;
+							cursor: pointer;
+							color: lighten($textColor, 35%);
+							@include transition(all 0.3s ease);
+							&:hover{
+								color: $textColor;
+							}
 						}
 					}
 					ul{
@@ -380,6 +400,7 @@
 	.smile{
 		width: 60px;
 		height: 48px; 
+		background-color: white;
 		padding: 3px 8px;
 		float: left;
 		position: relative;
@@ -397,10 +418,12 @@
 			display: none;
 			width: 208px;
 			min-height: 100px;
+			background-color: white;
 			@include shadow(0 5px 8px 0 lightgray);
 			position: absolute;
 			top: 49px;
 			right: 0;
+			z-index: 11;
 			ul{
 				li{
 					a{
@@ -434,12 +457,26 @@
 		.navigator{
 			display: none;
 		}
+		.sidebar{
+			display: none;
+		}
 		.search{
 			button{
 				display: none;
 			}
 		}
 	}
+	@media screen and (max-width:360px){
+		.logo2{
+			margin-left: 25%;
+		}
+	}
+	@media screen and (min-width:360px) and (max-width: 760px) {
+		.logo2{
+			margin-left: 37%;
+		}
+	}
+
 	@media screen and (max-width:760px){
 		.logo{ 
 			display: none;
@@ -448,7 +485,6 @@
 			width: 120px;
 			height: 48px;
 			float: left;
-			margin-left: 37%;
 		}
 		.navigator{
 			margin-top: 7px;
@@ -458,11 +494,52 @@
 			width: 37px;
 			height: 37px;
 			color: lighten($textColor,25%);
+			position: relative;
 			i{	
 				cursor: pointer;
 				font-size: 25px;
 			}
+
 			
+
+			// .sidebar, .browseMenu{
+			// 	position: absolute;
+			// 	top: 42px;
+			// 	left: -7px;
+			// 	width: 460px;
+			// 	border: 1px solid red;
+			// 	background-color: #F4F4F4;
+			// 	div{
+			// 		border: 1px solid transparent;
+			// 		background-color: $mainColor;
+			// 		div{
+			// 			width: 120px;
+			// 			margin: 40px auto;
+			// 			img{
+			// 				width: 100%;
+			// 				margin: 20px 0;
+			// 			}
+			// 			span{
+			// 				font-size: 16px;
+			// 				color: white;
+			// 				font-weight: 600;
+			// 			}
+			// 		}
+			// 	}
+			// 	a{
+			// 		display: block;
+			// 		padding: 11px 13px;
+			// 		font-size: 18px;
+			// 		color: $textColor;
+			// 		text-decoration: none;
+			// 		&:hover{
+			// 			background-color: white;
+			// 		}
+			// 	}
+			// }
+			// .browseMenu{
+			// 	left: 450px;
+			// }
 		}
 		.search{
 			width: 100%;
