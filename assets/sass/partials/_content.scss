@@ -2,13 +2,13 @@
 	.container-fluid{
 		padding:0;
 		.container1{
-			padding-top: 60px;
+			padding-top: 25px;
 			padding-bottom: 30px;
 			margin:0 auto;
 			.courses_list{
+				margin: 40px 0 15px 0;
 				h2{
 					width: calc(100% - 184px);
-					margin-bottom: 15px;
 					font-size: 19px;
 					color: $textColor;
 					display: inline-block;
@@ -28,6 +28,10 @@
 						&:first-child{
 							margin-right: 7px;
 							font-weight: 700;
+						}
+						&:nth-child(2){
+							font-weight: 700;
+							display: none;
 						}
 						&:hover{
 							background-color: lighten($textColor,70%);
