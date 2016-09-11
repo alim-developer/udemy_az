@@ -45,8 +45,10 @@ function contentWrapSlider(){
 	console.log(a);
 	$("#content-wrap .courses_list button").eq(2).click(function() {
 		console.log("a");
-		$("#content-wrap .courses_list .panel-box").css({
-			transform: "translateX(-"+a+"px)",
+		$("#content-wrap .courses_list .panel-box").eq(0).css({
+			// transform: "translateX(-"+a+"px)",
+			marginLeft: "-"+a+"px",
+			overflow: "hidden",
 			transition: "all 0.4s ease"
 		});
 	});

@@ -239,8 +239,9 @@ body {
         color: #8e8e8e; }
     #header-wrap .shopping:hover {
       background-color: #F4F4F4; }
-      #header-wrap .shopping:hover .shoppingCart {
-        display: block; }
+      @media screen and (min-width: 400px) {
+        #header-wrap .shopping:hover .shoppingCart {
+          display: block; } }
     #header-wrap .shopping .shoppingCart {
       display: none;
       width: 375px;
@@ -541,7 +542,7 @@ body {
       #content-wrap .container-fluid .container1 .courses_list .right_buttons {
         display: inline-block;
         float: right;
-        margin-right: 20px; }
+        margin-right: 15px; }
         #content-wrap .container-fluid .container1 .courses_list .right_buttons button {
           background-color: white;
           border: none;
@@ -659,19 +660,19 @@ body {
     width: 100%; } }
 @media screen and (min-width: 769px) {
   #content-wrap .container-fluid .container1 {
-    width: 700px; } }
+    width: 693px; } }
 @media screen and (min-width: 960px) {
   #content-wrap .container-fluid {
     margin-left: 231px; } }
 @media screen and (min-width: 970px) and (max-width: 1280px) {
   #content-wrap .container-fluid .container1 {
-    width: 697px; } }
+    width: 693px; } }
 @media screen and (min-width: 1280px) and (max-width: 1430px) {
   #content-wrap .container-fluid .container1 {
-    width: 928px; } }
+    width: 924px; } }
 @media screen and (min-width: 1430px) {
   #content-wrap .container-fluid .container1 {
-    width: 1159px;
+    width: 1155px;
     margin: 0 auto; } }
 
 @media screen and (max-width: 768px) {
