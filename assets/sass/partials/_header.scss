@@ -526,7 +526,7 @@ body{
 				background-color: #F4F4F4;
 				overflow-y: scroll;
 				@include shadow(4px 4px 8px lightgray);
-				div{
+				.imgProfile{
 					border: 1px solid transparent;
 					background-color: $mainColor;
 					div{

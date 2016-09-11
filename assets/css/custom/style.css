@@ -434,16 +434,16 @@ body {
         -moz-box-shadow: 4px 4px 8px lightgray;
         -webkit-box-shadow: 4px 4px 8px lightgray;
         box-shadow: 4px 4px 8px lightgray; }
-        #header-wrap .navigator .sidebar div {
+        #header-wrap .navigator .sidebar .imgProfile {
           border: 1px solid transparent;
           background-color: #994399; }
-          #header-wrap .navigator .sidebar div div {
+          #header-wrap .navigator .sidebar .imgProfile div {
             width: 120px;
             margin: 40px auto; }
-            #header-wrap .navigator .sidebar div div img {
+            #header-wrap .navigator .sidebar .imgProfile div img {
               width: 100%;
               margin: 20px 0; }
-            #header-wrap .navigator .sidebar div div span {
+            #header-wrap .navigator .sidebar .imgProfile div span {
               font-size: 16px;
               color: white;
               font-weight: 600; }
@@ -678,7 +678,7 @@ body {
   #content-wrap .container-fluid {
     overflow: hidden; }
     #content-wrap .container-fluid .container1 {
-      padding: 60px 15px; }
+      padding: 25px 15px; }
       #content-wrap .container-fluid .container1 .courses_list .sub-panel {
         height: auto;
         /* panel-box*/ }
