@@ -36,45 +36,133 @@ searchbar();
 
 //Sol menunun uzunlugunun footere qeder uzanmasi
 function leftMenuWidth(){
+	if($(window).width() > 960){
 		a = $("#content-wrap").height();
 		$("#header-wrap .fixedMenuBar").height(a);
 		$("#header-wrap .fixedMenuBar").find('ul').height(a);
+	}
+	if($(window).width() < 960){
+		$("#content-wrap .fixedMenuBar").height(450);
+	}
 }
 leftMenuWidth();
 
 
+//navigator hissede menunun cixmasi ucun
+function navigator(){
+	width = $(window).width();
+	$("#header-wrap .sidebar").css({
+		transform: "translateX(-"+width+"px)",
+		opacity: "0"
+	});
+	$("#header-wrap .browseMenu").css({
+		transform: "translateX(-"+width+"px)",
+		opacity: "0"
+	});
+
+	$("#header-wrap .navigat").click(function() {
+		$("#header-wrap .sidebar").css({
+			transform: "translateX(-8px)",
+			opacity: "1",
+			transition: "all 0.4s ease"
+		});
+		$("#header-wrap .browseMenu").css({
+			transform: "translateX(-"+width+"px)",
+			opacity: "0",
+			transition: "all 0.4s ease"
+		});
+		$("#content-wrap .container-fluid a").css({
+			pointerEvents: "none",
+			cursor: "default",
+		});
+		// $("#content-wrap .container-fluid").css({
+		// 	position: "relative",
+		// 	zIndex: "111",
+		// 	backgroundColor: "gray",
+		// 	opacity: "0.8",
+		// 	transition: "all 0.4s ease"
+		// });
+	});
+	$("#header-wrap .sidebar .buttonBrowse").click(function() {
+		$("#header-wrap .sidebar").css({
+		transform: "translateX(-"+width+"px)",
+		opacity: "0",
+		transition: "all 0.4s ease"
+	});
+		$("#header-wrap .browseMenu").css({
+			transform: "translateX(0)",
+			opacity: "1",
+			transition: "all 0.4s ease"
+		});
+	});
+	$("#header-wrap .browseMenu div").click(function() {
+		$("#header-wrap .sidebar").css({
+			transform: "translateX(-8px)",
+			opacity: "1",
+			transition: "all 0.4s ease"
+		});
+		$("#header-wrap .browseMenu").css({
+			transform: "translateX(-"+width+"px)",
+			opacity: "0",
+			transition: "all 0.4s ease"
+		});
+	});
+
+	$("#content-wrap .container1").click(function() {
+		$("#header-wrap .sidebar").css({
+			transform: "translateX(-"+width+"px)",
+			opacity: "0",
+			transition: "all 0.4s ease"
+		});
+		$("#header-wrap .browseMenu").css({
+			transform: "translateX(-"+width+"px)",
+			opacity: "0",
+			transition: "all 0.4s ease"
+		});
+		$("#content-wrap .container-fluid a").css({
+			pointerEvents: "",
+			cursor: ""
+		});
+		// $("#content-wrap .container-fluid").css({
+		// 	backgroundColor: "",
+		// 	opacity: "",
+		// 	transition: "",
+		// 	transition: "all 0.4s ease"
+		// });
+	});
 
 
-// function sidebar(){
-// var deg=0;
-// var count = 0;
-// var nav_s = $('.navigator i');  
-// var window_s = $("html,body");
-// var collapse_s = $(".navigator .myCollapse");
-// var i;
+	//olculerin beraberlesmesu ucun
+	function widthSideBar(){
+		if($(window).width() > 620){
+			windowWidth = $(window).width() - 230;
+			$("#header-wrap .sidebar").width(windowWidth);
+			$("#header-wrap .browseMenu").width(windowWidth);
+			$(window).resize(function() {
+				windowWidth = $(window).width() - 230;
+				$("#header-wrap .browseMenu").width(windowWidth);
+				$("#header-wrap .sidebar").width(windowWidth);
+			});
+		}
+		if($(window).width() < 620){
+			windowWidth = $(window).width() - 100;
+			$("#header-wrap .sidebar").width(windowWidth);
+			$("#header-wrap .browseMenu").width(windowWidth);
+			$(window).resize(function() {
+				windowWidth = $(window).width() - 100;
+				$("#header-wrap .browseMenu").width(windowWidth);
+				$("#header-wrap .sidebar").width(windowWidth);
+			});
+		}
+	}
+	widthSideBar();
 
-
-// 	nav_s.on('click', function(e) {
-// 	e.preventDefault()
-// 	if(count==0){
-// 		collapsing();
-// 	}
-// 	else{
-// 		nonecollapse();
-// 	}
-// });	
-// 	function nonecollapse() {
-// 		count=0;
-// 		nav_s.animate({left: '0'}, 500);
-// 		window_s.animate({marginLeft: '0'}, 500);
-// 		collapse_s.animate({right:'-270px'}, 500);
-// 	}
-// 	function collapsing() {
-// 		count=1;
-// 		nav_s.animate({left: '-245px'}, 500);
-// 		window_s.animate({marginLeft: '-270px'}, 500);
-// 		collapse_s.animate({right:'0'}, 500);
-// 	}
-// }
-
-// sidebar();
+	//menunun uzunlugunun ekranin uzunlugu ile uygunlasmasi ucun
+	function heightSideBar(){
+		height = $(window).height();
+		$("#header-wrap .sidebar").height(height);
+		$("#header-wrap .browseMenu").height(height);
+	}
+	heightSideBar();
+}
+navigator();

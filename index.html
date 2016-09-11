@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Udemy</title>
+    <title>Grapes</title>
 
     <!-- iconsWebSite -->
     <link rel="stylesheet" type="text/css" href="assets/css/iconsWebSite.css">
@@ -101,17 +101,17 @@
         </div>
         <!--Navigator bar --> 
         <div class="navigator">
-            <i  class="fa fa-bars" aria-hidden="true"></i>
+            <i class="navigat fa fa-bars" aria-hidden="true"></i>
             
-           <!--  <div class="sidebar myCollapse">
+            <div class="sidebar">
                 <div class="text-center">
-                    <div >
+                    <div>
                         <img src="assets/images/smileWhite.png">
                         <span>Alim</span>
                     </div>
                 </div>
                 <ul>
-                    <li><a href="#">Browse <i class="pull-right fa fa-angle-right" aria-hidden="true"></i></a></li>
+                    <li class="buttonBrowse"><a >Browse <i class="pull-right fa fa-angle-right" aria-hidden="true"></i></a></li>
                     <li><a href="#">My Courses</a></li>
                     <li><a href="#">My Notification</a></li>
                     <li><a href="#">My Messages</a></li>
@@ -120,23 +120,23 @@
                     <li><a href="#">Logout</a></li>   
                 </ul>
             </div>
+
             <div class="browseMenu">
-                <div class="text-center">
-                    <div >
-                        <img src="assets/images/smileWhite.png">
-                        <span>Alim</span>
-                    </div>
+                <div>
+                    <span><i class="pull-left fa fa-angle-left" aria-hidden="true"></i> Menu</span>
+                    <h6>Browse</h6>
                 </div>
                 <ul>
-                    <li><a href="#">Browse <i class="pull-right fa fa-angle-right" aria-hidden="true"></i></a></li>
-                    <li><a href="#">My Courses</a></li>
-                    <li><a href="#">My Notification</a></li>
-                    <li><a href="#">My Messages</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Logout</a></li>   
+                    <li><a href="#"><b class="menu__icon ud_web-development"></b>&nbsp; Web Development</a></li>
+                    <li><a href="#"><b class="menu__icon ud_mobile-apps"></b>&nbsp; Mobile Apps</a></li>
+                    <li><a href="#"><b class="menu__icon ud_programming-languages"></b>&nbsp; Programming Language</a></li>
+                    <li><a href="#"><b class="menu__icon ud_game-development"></b>&nbsp; Game Development</a></li>
+                    <li><a href="#"><b class="menu__icon ud_databases"></b>&nbsp; Databases</a></li>
+                    <li><a href="#"><b class="menu__icon ud_software-testing"></b>&nbsp; Software Testing</a></li>
+                    <li><a href="#"><b class="menu__icon ud_software-engineering"></b>&nbsp; Software Engineering</a></li>
+                    <li><a href="#"><b class="menu__icon ud_development-tools"></b>&nbsp; Development Tools</a></li>  
                 </ul>
-            </div> -->
+            </div>
 
 
         </div>
@@ -153,7 +153,7 @@
         </div>
         <!-- for screen max 760px device -->
         <div class="logo2">
-            <h1 style="font-size: 19px; padding: 4px 12px; line-height: 35px; color: #994399; font-weight: bold; ">grapes</h1>
+            <h1>grapes</h1>
         </div>
         <!-- My Courses -->
         <div class="right-panel">
@@ -266,8 +266,186 @@
                 <div class="courses_list">
                     <h2>Students who viewed <i>"The Complete Cyber Security Course : Hacking Exposed!"</i> also viewed</h2>
                     <div class="right_buttons">
-                        <a class="hidden-xs" href=""><span>View All <i class="icon-plus-sign fa fa-plus-circle"></i></span></a>
-                       <!--  <a class="hidden-xs" href=""><span>Collapse <i class="icon-minus-sign fa fa-minus-circle"></i></span></a> -->
+                        <button class="hidden-xs" ><span>View All <i class="icon-plus-sign fa fa-plus-circle"></i></span></button>
+                       <!--  <button class="hidden-xs"><span>Collapse <i class="icon-minus-sign fa fa-minus-circle"></i></span></button> -->
+                        
+                        <button class="hidden-xs" type="button"><i class="icon-chevron-left fa fa-chevron-left"></i></button>
+                        <button class="hidden-xs" type="button"><i class="icon-chevron-right fa fa-chevron-right"></i></button> 
+                    </div>
+                    <div class="clearFix"></div>
+                    <div class="sub-panel">
+                        <a class= "panel-box" href="#">
+                            <div class="box-img">
+                                <img src="assets/images/categories/2.jpg">
+                                <div class="img-info">
+                                    <img src="assets/images/categories/2.1.jpg">
+                                    <span>309 lectures</span>
+                                    <span>42.5 hours video</span>
+                                </div>
+                            </div>
+                            <div class="box-info">
+                                <h6>The Web Developer Bootcamp </h6>
+                                <div class="auther">Colt steele, Developer and Bootcamp Instructor</div>
+                                <div class="rank">
+                                    <span class="star"><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i></span> 
+                                    <span class="review_degree">4.7</span>
+                                    <span class="review_count">(6663)</span>
+                                </div>
+                                <div class="course-price">
+                                    <strong>$19</strong>
+                                    <s>$200</s>
+                                </div>
+                            </div>
+                        </a><!-- panel-box-->
+                         <a class= "panel-box" href="#">
+                            <div class="box-img">
+                                <img src="assets/images/categories/3.jpg">
+                                <div class="img-info">
+                                    <img src="assets/images/categories/3.1.jpg">
+                                    <img src="assets/images/categories/3.1.jpg">
+                                    <span>309 lectures</span>
+                                    <span>42.5 hours video</span>
+                                </div>
+                            </div>
+                            <div class="box-info">
+                                <h6>The Compelete Developer Course Bootcamp Beginner to </h6>
+                                <div class="auther">Colt steele, Developer and Bootcamp Instructor</div>
+                                <div class="rank">
+                                    <span class="star"><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i></span> 
+                                    <span class="review_degree">4.7</span>
+                                    <span class="review_count">(6663)</span>
+                                </div>
+                                <div class="course-price">
+                                    <strong>$19</strong>
+                                    <s>$200</s>
+                                </div>
+                            </div>
+                        </a><!-- panel-box-->
+                        <a class= "panel-box" href="#">
+                            <div class="box-img">
+                                <img src="assets/images/categories/3.jpg">
+                                <div class="img-info">
+                                    <img src="assets/images/categories/3.1.jpg">
+                                    <img src="assets/images/categories/3.1.jpg">
+                                    <span>309 lectures</span>
+                                    <span>42.5 hours video</span>
+                                </div>
+                            </div>
+                            <div class="box-info">
+                                <h6>The Compelete Developer Course Bootcamp Beginner to </h6>
+                                <div class="auther">Colt steele, Developer and Bootcamp Instructor</div>
+                                <div class="rank">
+                                    <span class="star"><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i></span> 
+                                    <span class="review_degree">4.7</span>
+                                    <span class="review_count">(6663)</span>
+                                </div>
+                                <div class="course-price">
+                                    <strong>$19</strong>
+                                    <s>$200</s>
+                                </div>
+                            </div>
+                        </a><!-- panel-box-->
+                         <a class= "panel-box" href="#">
+                            <div class="box-img">
+                                <img src="assets/images/categories/4.jpg">
+                                <div class="img-info">
+                                    <img src="assets/images/categories/4.1.jpg">
+                                    <span>309 lectures</span>
+                                    <span>42.5 hours video</span>
+                                </div>
+                            </div>
+                            <div class="box-info">
+                                <h6>The Compelete Web Developer Course 2.0</h6>
+                                <div class="auther">Colt steele, Developer and Bootcamp Instructor</div>
+                                <div class="rank">
+                                    <span class="star"><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i></span> 
+                                    <span class="review_degree">4.7</span>
+                                    <span class="review_count">(6663)</span>
+                                </div>
+                                <div class="course-price">
+                                    <strong>$19</strong>
+                                    <s>$200</s>
+                                </div>
+                            </div>
+                        </a><!-- panel-box-->
+                         <a class= "panel-box" href="#">
+                            <div class="box-img">
+                                <img src="assets/images/categories/5.jpg">
+                                <div class="img-info">
+                                    <img src="assets/images/categories/5.1.jpg">
+                                    <span>309 lectures</span>
+                                    <span>42.5 hours video</span>
+                                </div>
+                            </div>
+                            <div class="box-info">
+                                <h6>Accelerated Javascript Training</h6>
+                                <div class="auther">Colt steele, Developer and Bootcamp Instructor</div>
+                                <div class="rank">
+                                    <span class="star"><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i></span> 
+                                    <span class="review_degree">4.7</span>
+                                    <span class="review_count">(6663)</span>
+                                </div>
+                                <div class="course-price">
+                                    <strong>$19</strong>
+                                    <s>$200</s>
+                                </div>
+                            </div>
+                        </a><!-- panel-box-->
+                        <a class= "panel-box" href="#">
+                            <div class="box-img">
+                                <img src="assets/images/categories/4.jpg">
+                                <div class="img-info">
+                                    <img src="assets/images/categories/4.1.jpg">
+                                    <span>309 lectures</span>
+                                    <span>42.5 hours video</span>
+                                </div>
+                            </div>
+                            <div class="box-info">
+                                <h6>The Compelete Web Developer Course 2.0</h6>
+                                <div class="auther">Colt steele, Developer and Bootcamp Instructor</div>
+                                <div class="rank">
+                                    <span class="star"><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i></span> 
+                                    <span class="review_degree">4.7</span>
+                                    <span class="review_count">(6663)</span>
+                                </div>
+                                <div class="course-price">
+                                    <strong>$19</strong>
+                                    <s>$200</s>
+                                </div>
+                            </div>
+                        </a><!-- panel-box-->
+                        <a class= "panel-box" href="#">
+                            <div class="box-img">
+                                <img src="assets/images/categories/4.jpg">
+                                <div class="img-info">
+                                    <img src="assets/images/categories/4.1.jpg">
+                                    <span>309 lectures</span>
+                                    <span>42.5 hours video</span>
+                                </div>
+                            </div>
+                            <div class="box-info">
+                                <h6>The Compelete Web Developer Course 2.0</h6>
+                                <div class="auther">Colt steele, Developer and Bootcamp Instructor</div>
+                                <div class="rank">
+                                    <span class="star"><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i></span> 
+                                    <span class="review_degree">4.7</span>
+                                    <span class="review_count">(6663)</span>
+                                </div>
+                                <div class="course-price">
+                                    <strong>$19</strong>
+                                    <s>$200</s>
+                                </div>
+                            </div>
+                        </a><!-- panel-box-->
+                    </div>
+                </div>
+
+
+                <div class="courses_list">
+                    <h2>Students who viewed <i>"The Complete Cyber Security Course : Hacking Exposed!"</i> also viewed</h2>
+                    <div class="right_buttons">
+                        <button class="hidden-xs" ><span>View All <i class="icon-plus-sign fa fa-plus-circle"></i></span></button>
+                        <!--  <button class="hidden-xs"><span>Collapse <i class="icon-minus-sign fa fa-minus-circle"></i></span></button> -->
                         
                         <button class="hidden-xs" type="button"><i class="icon-chevron-left fa fa-chevron-left"></i></button>
                         <button class="hidden-xs" type="button"><i class="icon-chevron-right fa fa-chevron-right"></i></button> 
@@ -398,140 +576,8 @@
                 <div class="courses_list">
                     <h2>Students who viewed <i>"The Complete Cyber Security Course : Hacking Exposed!"</i> also viewed</h2>
                     <div class="right_buttons">
-                        <a class="hidden-xs" href=""><span>View All <i class="icon-plus-sign fa fa-plus-circle"></i></span></a>
-                       <!--  <a class="hidden-xs" href=""><span>Collapse <i class="icon-minus-sign fa fa-minus-circle"></i></span></a> -->
-                        
-                        <button class="hidden-xs" type="button"><i class="icon-chevron-left fa fa-chevron-left"></i></button>
-                        <button class="hidden-xs" type="button"><i class="icon-chevron-right fa fa-chevron-right"></i></button> 
-                    </div>
-                    <div class="clearFix"></div>
-                    <div class="sub-panel">
-                        <a class= "panel-box" href="#">
-                            <div class="box-img">
-                                <img src="assets/images/categories/2.jpg">
-                                <div class="img-info">
-                                    <img src="assets/images/categories/2.1.jpg">
-                                    <span>309 lectures</span>
-                                    <span>42.5 hours video</span>
-                                </div>
-                            </div>
-                            <div class="box-info">
-                                <h6>The Web Developer Bootcamp </h6>
-                                <div class="auther">Colt steele, Developer and Bootcamp Instructor</div>
-                                <div class="rank">
-                                    <span class="star"><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i></span> 
-                                    <span class="review_degree">4.7</span>
-                                    <span class="review_count">(6663)</span>
-                                </div>
-                                <div class="course-price">
-                                    <strong>$19</strong>
-                                    <s>$200</s>
-                                </div>
-                            </div>
-                        </a><!-- panel-box-->
-                         <a class= "panel-box" href="#">
-                            <div class="box-img">
-                                <img src="assets/images/categories/3.jpg">
-                                <div class="img-info">
-                                    <img src="assets/images/categories/3.1.jpg">
-                                    <img src="assets/images/categories/3.1.jpg">
-                                    <span>309 lectures</span>
-                                    <span>42.5 hours video</span>
-                                </div>
-                            </div>
-                            <div class="box-info">
-                                <h6>The Compelete Developer Course Bootcamp Beginner to </h6>
-                                <div class="auther">Colt steele, Developer and Bootcamp Instructor</div>
-                                <div class="rank">
-                                    <span class="star"><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i></span> 
-                                    <span class="review_degree">4.7</span>
-                                    <span class="review_count">(6663)</span>
-                                </div>
-                                <div class="course-price">
-                                    <strong>$19</strong>
-                                    <s>$200</s>
-                                </div>
-                            </div>
-                        </a><!-- panel-box-->
-                        <a class= "panel-box" href="#">
-                            <div class="box-img">
-                                <img src="assets/images/categories/3.jpg">
-                                <div class="img-info">
-                                    <img src="assets/images/categories/3.1.jpg">
-                                    <img src="assets/images/categories/3.1.jpg">
-                                    <span>309 lectures</span>
-                                    <span>42.5 hours video</span>
-                                </div>
-                            </div>
-                            <div class="box-info">
-                                <h6>The Compelete Developer Course Bootcamp Beginner to </h6>
-                                <div class="auther">Colt steele, Developer and Bootcamp Instructor</div>
-                                <div class="rank">
-                                    <span class="star"><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i></span> 
-                                    <span class="review_degree">4.7</span>
-                                    <span class="review_count">(6663)</span>
-                                </div>
-                                <div class="course-price">
-                                    <strong>$19</strong>
-                                    <s>$200</s>
-                                </div>
-                            </div>
-                        </a><!-- panel-box-->
-                         <a class= "panel-box" href="#">
-                            <div class="box-img">
-                                <img src="assets/images/categories/4.jpg">
-                                <div class="img-info">
-                                    <img src="assets/images/categories/4.1.jpg">
-                                    <span>309 lectures</span>
-                                    <span>42.5 hours video</span>
-                                </div>
-                            </div>
-                            <div class="box-info">
-                                <h6>The Compelete Web Developer Course 2.0</h6>
-                                <div class="auther">Colt steele, Developer and Bootcamp Instructor</div>
-                                <div class="rank">
-                                    <span class="star"><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i></span> 
-                                    <span class="review_degree">4.7</span>
-                                    <span class="review_count">(6663)</span>
-                                </div>
-                                <div class="course-price">
-                                    <strong>$19</strong>
-                                    <s>$200</s>
-                                </div>
-                            </div>
-                        </a><!-- panel-box-->
-                         <a class= "panel-box" href="#">
-                            <div class="box-img">
-                                <img src="assets/images/categories/5.jpg">
-                                <div class="img-info">
-                                    <img src="assets/images/categories/5.1.jpg">
-                                    <span>309 lectures</span>
-                                    <span>42.5 hours video</span>
-                                </div>
-                            </div>
-                            <div class="box-info">
-                                <h6>Accelerated Javascript Training</h6>
-                                <div class="auther">Colt steele, Developer and Bootcamp Instructor</div>
-                                <div class="rank">
-                                    <span class="star"><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i><i class="ud_i_star"></i></span> 
-                                    <span class="review_degree">4.7</span>
-                                    <span class="review_count">(6663)</span>
-                                </div>
-                                <div class="course-price">
-                                    <strong>$19</strong>
-                                    <s>$200</s>
-                                </div>
-                            </div>
-                        </a><!-- panel-box-->
-                    </div>
-                </div>
-
-
-                <div class="courses_list">
-                    <h2>Students who viewed <i>"The Complete Cyber Security Course : Hacking Exposed!"</i> also viewed</h2>
-                    <div class="right_buttons">
-                        <a class="hidden-xs" href=""><span>View All <i class="icon-plus-sign fa fa-plus-circle"></i></span></a>
-                       <!--  <a class="hidden-xs" href=""><span>Collapse <i class="icon-minus-sign fa fa-minus-circle"></i></span></a> -->
+                        <button class="hidden-xs" ><span>View All <i class="icon-plus-sign fa fa-plus-circle"></i></span></button>
+                        <!--  <button class="hidden-xs"><span>Collapse <i class="icon-minus-sign fa fa-minus-circle"></i></span></button> -->
                         
                         <button class="hidden-xs" type="button"><i class="icon-chevron-left fa fa-chevron-left"></i></button>
                         <button class="hidden-xs" type="button"><i class="icon-chevron-right fa fa-chevron-right"></i></button> 
@@ -693,7 +739,9 @@
     <script src="assets/js/jquery-3.1.0.min.js"></script>
     <!-- bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
+    <!-- custom -->
     <script src="assets/js/header-wrap.js"></script>
+    <script src="assets/js/content-wrap.js"></script>
     <script src="assets/js/footer-wrap.js"></script>
   </body>
 </html>

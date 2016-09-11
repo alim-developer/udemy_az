@@ -17,23 +17,7 @@
 				.right_buttons{
 					display: inline-block;
 					float: right;
-					margin-right:19px;
-					a{
-						display: inline-block;
-						background-color: white;
-						border: none;
-						padding: 4px 8px;
-						font-size: 13px;
-						@include border-radius(2px);
-						text-decoration: none;
-						color: lighten($textColor,20%);
-						margin-right: 7px;
-						font-weight: 700;
-						&:hover{
-							background-color: lighten($textColor,70%);
-							color: $textColor;
-						}
-					}
+					margin-right: 20px;
 					button{
 						background-color: white;
 						border: none;
@@ -41,6 +25,10 @@
 						padding: 4px 10px;
 						font-size: 13px;
 						@include border-radius(2px);
+						&:first-child{
+							margin-right: 7px;
+							font-weight: 700;
+						}
 						&:hover{
 							background-color: lighten($textColor,70%);
 							color: $textColor;
@@ -148,7 +136,18 @@
 			}
 		}
 	}
-	@media screen and (min-width: 768px){
+	@media screen and (max-width:768px){
+		.container-fluid{
+			.container1{
+				.courses_list{
+					h2{
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	@media screen and (min-width: 769px){
 		.container-fluid{
 			.container1{
 				width:700px;
